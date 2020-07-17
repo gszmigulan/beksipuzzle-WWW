@@ -1,0 +1,41 @@
+ #image-holder {
+ 
+  text-align: center;
+  /*width: 200px;
+   border: 3px solid rgb(100, 13, 13);*/
+   margin: 0 auto;
+  
+}
+
+img{
+    
+    border: 3px solid rgb(107, 25, 25);
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+
+
+div.gallery img:hover {
+  /*border: 1px solid #777;*/
+  filter: grayscale(0%);
+}
+
+div.gallery img {
+  width: 97%;
+  height: 180px;
+  filter: grayscale(100%);
+  /*   transition: 1s;*/
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+

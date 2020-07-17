@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="galery2.css">
+
+
+</head>
+<body>
+
+        <div id="image-holder"></div>
+<div id="main">
+<div class="gallery">
+  
+    <img src="img/beks1.jpg" onclick=" loadImage('img/beks1.jpg')
+    .then(img => document.getElementById('image-holder').appendChild(img))
+    .catch(error => console.error(error));"  width="600" height="400">
+  </a>
+  <div class="desc"> 
+    <a href="game1.html?w=501&h=600&pic=img/beks1.jpg"> play</a>
+    
+  </div>
+</div>
+
+<div class="gallery">
+ 
+    <img src="img/beks2.jpg" onclick=" loadImage('img/beks2.jpg')
+    .then(img => document.getElementById('image-holder').appendChild(img))
+    .catch(error => console.error(error));" width="600" height="400">
+  </a>
+  <div class="desc">
+    <a href="game1.html?w=520&h=650&pic=img/beks2.jpg">play</a>
+  </div>
+</div>
+
+<div class="gallery">
+ 
+    <img src="img/beks3.jpg" onclick=" loadImage('img/beks3.jpg')
+    .then(img => document.getElementById('image-holder').appendChild(img))
+    .catch(error => console.error(error));" width="600" height="400">
+  </a>
+  <div class="desc">
+    <a href="game1.html?w=490&h=600&pic=img/beks3.jpg">play</a>
+  </div>
+</div>
+
+<div class="gallery">
+  
+    <img src="img/beks4.jpg" onclick=" loadImage('img/beks4.jpg')
+    .then(img => document.getElementById('image-holder').appendChild(img))
+    .catch(error => console.error(error));" width="600" height="400">
+  </a>
+  <div class="desc">
+      <a href="game1.html?w=600&h=600&pic=img/beks4.jpg">play</a>
+  </div>
+</div>
+
+<div class="gallery">
+    
+      <img src="img/beks5.jpg" onclick=" loadImage('img/beks5.jpg')
+      .then(img => document.getElementById('image-holder').appendChild(img))
+      .catch(error => console.error(error));" width="600" height="400">
+    </a>
+    <div class="desc">
+        <a href="game1.html?w=750&h=629&pic=img/beks5.jpg">play</a>
+    </div>
+  </div>
+
+  <div class="gallery">
+      
+        <img src="img/beks6.jpg" onclick=" loadImage('img/beks6.jpg')
+        .then(img => document.getElementById('image-holder').appendChild(img))
+        .catch(error => console.error(error));" width="600" height="400">
+      </a>
+      <div class="desc">
+          <a href="game1.html?w=568&h=620&pic=img/beks6.jpg">play</a>
+      </div>
+    </div>
+
+    <div class="gallery">
+       
+          <img src="img/beks7.jpg" onclick=" loadImage('img/beks7.jpg')
+          .then(img => document.getElementById('image-holder').appendChild(img))
+          .catch(error => console.error(error));" width="600" height="400">
+        </a>
+        <div class="desc">
+            <a href="game1.html?w=775&h=620&pic=img/beks7.jpg">play</a>
+        </div>
+      </div>
+      <div class="gallery">
+         
+            <img src="img/beks8.jpg" onclick=" loadImage('img/beks8.jpg')
+            .then(img => document.getElementById('image-holder').appendChild(img))
+            .catch(error => console.error(error));" width="600" height="400">
+          </a>
+          <div class="desc">
+             <a href="game1.html?w=520&h=620&pic=img/beks8.jpg">play</a>
+          </div>
+        </div>
+        <div class="gallery">
+              <img src="img/beks9.jpg" onclick=" loadImage('img/beks9.jpg')
+              .then(img => document.getElementById('image-holder').appendChild(img))
+              .catch(error => console.error(error));" width="600" height="400">
+            </a>
+            <div class="desc">
+                <a href="game1.html?w=515&h=610&pic=img/beks9.jpg">play</a>
+            </div>
+          </div>
+          <div class="gallery">
+              
+                <img src="img/beks10.jpg" onclick=" loadImage('img/beks10.jpg')
+                .then(img => document.getElementById('image-holder').appendChild(img))
+                .catch(error => console.error(error));" width="600" height="400">
+              </a>
+              <div class="desc">
+                  <a href="game1.html?w=503&h=610&pic=img/beks10.jpg">play</a>
+              </div>
+            </div>
+            <div class="gallery">
+               
+                  <img src="img/beks11.jpg" onclick=" loadImage('img/beks11.jpg')
+                  .then(img => document.getElementById('image-holder').appendChild(img))
+                  .catch(error => console.error(error));" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <a href="game1.html?w=500&h=615&pic=img/beks11.jpg">play</a>
+                </div>
+              </div>
+              <div class="gallery">
+                 
+                    <img src="img/beks12.jpg" onclick=" loadImage('img/beks12.jpg')
+                    .then(img => document.getElementById('image-holder').appendChild(img))
+                    .catch(error => console.error(error));" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                      <a href="game1.html?w=486&h=610&pic=img/beks12.jpg">play</a>
+                  </div>
+                </div>
+</div>
+
+               
+                <script>
+                  function loadImage(url) {
+                    return new Promise((resolve, reject) => {
+                      let img = new Image();
+                      document.getElementById("image-holder").innerHTML = "";
+                      img.addEventListener('load', e => resolve(img));
+                      img.addEventListener('error', () => {
+                        reject(new Error(`Failed to load image's URL: ${url}`));
+                      });
+                      img.src = url;
+                    });
+                  }
+                </script>
+
+
+</body>
+</html>
